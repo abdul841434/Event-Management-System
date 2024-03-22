@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Student Management System</title>
+    <style>
+       
+        section {
+            background-color: #f9f9f9;
+        }
+
+        .contact-info {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            max-width: 500px;
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to the Event Management System</h1>
+        <p>Empowering Your Events, Empowering You</p>
+    </header>
+
+    <nav>
+
+    </nav>
+
+    <section>
+        <h2>Contact Us</h2>
+
+        <div class="contact-info">
+            <p>
+                If you have any inquiries or need support, feel free to reach out to us. You can use the contact form
+                below or use the provided contact information.
+            </p>
+
+            <h3>Contact Information:</h3>
+            <p>Email: stareventz@gmail.com</p>
+            <p>Phone: +91 7292907225</p>
+
+            <h3>Contact Form:</h3>
+            <form id="contactForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+        });
+    </script>
+
+</body>
+</html>
