@@ -1,0 +1,156 @@
+/* Reset in rainbow glory! */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .hero {
+    background-image: url("hero-image.jpg"); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff; /* White text over image */
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .hero a {
+    background-color: #e74c3c; /* Red button */
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out all;
+  }
+  
+  .hero a:hover {
+    background-color: #2ecc71; /* Green on hover */
+  }
+  
+  /* Global styles with a touch of sunshine */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #f1c40f; /* Sunny orange */
+    line-height: 1.5;
+  }
+  
+  /* Header - A splash of cool blue */
+  header {
+    background-color: #3498db; /* Deep blue */
+    color: #fff; /* White text */
+    padding: 20px;
+  }
+  
+  header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Navigation - A burst of juicy fruits */
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #e74c3c; /* Red */
+    text-decoration: none;
+    transition: 0.3s ease-in-out all; /* Smooth hover effect */
+  }
+  
+  nav a:hover {
+    color: #2ecc71; /* Green */
+  }
+  
+  /* Portfolio - Let's play with pastels! */
+  .portfolio {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #dfe4ea; /* Light blue */
+  }
+  
+  .portfolio-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  
+  /* Portfolio items - A kaleidoscope of colors! */
+  .portfolio-item {
+    width: 300px;
+    margin: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .portfolio-item h3 {
+    padding: 20px;
+    font-size: 24px;
+    color: #9b59b6; /* Light purple */
+  }
+  
+  .portfolio-item p {
+    padding: 0 20px 20px;
+    color: #34495e; /* Dark blue */
+  }
+  
+  /* Portfolio details - Earthy tones */
+  .portfolio-details {
+    background-color: #f5f5f5; /* Light gray */
+    padding: 40px 20px;
+  }
+  
+  .portfolio-details-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .portfolio-details-item {
+    margin: 40px 0;
+    text-align: left;
+  }
+  
+  .portfolio-details-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #27ae60; /* Dark green */
+  }
+  
+  /* Footer - Back to cool blue */
+  footer {
+    background-color: #3498db; /* Deep blue */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 20px;
+  }
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+  }
+  

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Management - Plan Your Event</title>
+  <link rel="stylesheet" type="text/css" href="stream.css">
+</head>
+<body>
+  <header>
+    <h1>Event Management</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container">
+      <div class="event-planner">
+        <h2>Plan Your Event</h2>
+        <div class="event-steps">
+          <div class="step" id="event-type-step">
+            <h3>Event Type</h3>
+            <div class="options" id="event-type-options">
+              <div class="option" data-next="event-size-options">Wedding</div>
+              <div class="option" data-next="event-size-options">Corporate Event</div>
+              <div class="option" data-next="event-size-options">Private Party</div>
+              <div class="option" data-next="event-size-options">Charity Gala</div>
+            </div>
+          </div>
+          <div class="step" id="event-size-step">
+            <h3>Event Size</h3>
+            <div class="options" id="event-size-options" style="display: none;">
+              <div class="option" data-next="event-date-options">Small (up to 100 guests)</div>
+              <div class="option" data-next="event-date-options">Medium (101-500 guests)</div>
+              <div class="option" data-next="event-date-options">Large (501+ guests)</div>
+            </div>
+          </div>
+          <div class="step" id="event-date-step">
+            <h3>Event Date</h3>
+            <div class="options" id="event-date-options" style="display: none;">
+              <div class="option" data-next="summary">2024-06-01</div>
+              <div class="option" data-next="summary">2024-07-15</div>
+              <div class="option" data-next="summary">2024-09-20</div>
+            </div>
+          </div>
+          <div class="step" id="additional-details-step">
+            <h3>Additional Details</h3>
+            <div class="options" id="additional-details-options" style="display: none;">
+              <div class="option">Indoor</div>
+              <div class="option">Outdoor</div>
+              <div class="option">Theme</div>
+              <div class="option">Catering</div>
+              <div class="option">Entertainment</div>
+            </div>
+          </div>
+          <div class="step" id="summary-step">
+            <h3>Summary</h3>
+            <div class="options" id="summary" style="display: none;">
+              <div class="summary-item">Event Type: <span id="selected-event-type"></span></div>
+              <div class="summary-item">Event Size: <span id="selected-event-size"></span></div>
+              <div class="summary-item">Event Date: <span id="selected-event-date"></span></div>
+              <button id="book-event">Book Event</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Event Management. All rights reserved.</p>
+  </footer>
+
+  <script src="stream.js"></script>
+</body>
+</html>
